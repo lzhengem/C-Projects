@@ -1,0 +1,9 @@
+
+Month:		ddd 2033
+-----------------------
+Total Collected:	$ 343434.00
+Sales:			$ 323994.34
+County Sales Tax:	$   6479.89
+State Sales Tax:	$  12959.77
+Total Sales Tax:	$  19439.66
+-----------------------

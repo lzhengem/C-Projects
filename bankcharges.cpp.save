@@ -1,0 +1,47 @@
+/*
+Lena Zheng
+CS110A Practice Problem 4
+Bankcharges.cpp
+*/
+
+	#include <iostream>
+	using namespace std;
+
+	int main()
+{ 
+	double balance, checks_fee, balance_fee, total_fee;
+	int checks;
+	cout << "Enter the following information" 
+	     << " about your checking account.\n";
+	cout << "Beginning balance: $";
+		cin >> balance;
+	cout << "Number of checks written: ";
+		cin >> checks;
+if (checks <20) 
+		{ 
+	checks_fee = 10 + .10 * checks;
+
+}
+else if (20 < checks and checks < 40) {
+	checks_fee = .08* checks +10;
+
+}
+else if (checks < 60) {
+	checks_fee = .06 * checks + 10;
+
+}
+else {
+	checks_fee = 10 + .04 * checks;
+	
+}
+if (balance < 400) {
+	balance_fee = 15;
+}
+else if (400 < balance) {
+	balance_fee = 0;
+}
+else cout << "error" << endl;
+
+total_fee = balance_fee + checks_fee;
+
+	cout << "The bank fee this month is " <<
